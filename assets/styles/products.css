@@ -1,0 +1,199 @@
+.more-products {
+
+    height: 100%;
+
+    background: rgb(255, 255, 255);
+    background: linear-gradient(238deg, rgba(255, 255, 255, 1) 7%, rgba(129, 194, 223, 1) 47%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.tilte-products {
+    font-size: 3rem;
+    margin: 6rem 0 3rem 0;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    margin: 1rem 0 4rem 0;
+}
+
+.card-products {
+    background-color: #fff;
+    max-width: 24rem;
+    height: 35rem;
+    max-height: 36rem;
+    padding: 2rem;
+    border-radius: 0 6rem 0 6rem;
+}
+
+.product-img {
+    min-width: 20rem;
+    width: 100%;
+    border-radius: 0 5rem 0 0;
+}
+
+.prod-texts {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prod-name {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 0.6rem;
+}
+
+.prod-desc {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.buy-more,
+.buy-more:not(:hover) {
+    border: none;
+    padding: 1.2rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    margin: 0 0 4rem 0;
+    transition: 0.7s;
+}
+
+.buy-more:hover {
+    transition: 0.7s;
+    background-color: #323232;
+    color: #fff;
+}
+
+.buy-more:active {
+    position: relative;
+    top: 2px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .tilte-products {
+        font-size: 2.6rem;
+    }
+
+    .products {
+        gap: 4rem;
+    }
+
+    .card-products {
+        max-width: 16rem;
+        height: 26rem;
+        padding: 1rem;
+    }
+
+    .product-img {
+        min-width: 14rem;
+        width: 100%;
+        border-radius: 0 5rem 0 0;
+    }
+
+    .prod-texts {
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .prod-name {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 0.2rem;
+    }
+
+    .prod-desc {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .buy-more,
+    .buy-more:not(:hover) {
+        border: none;
+        padding: 1rem;
+        border-radius: 2rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .more-products {
+        background: rgb(92, 197, 245);
+
+    }
+
+    .tilte-products {
+        font-size: 2rem;
+    }
+
+    .products {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .card-products {
+        max-width: 22rem;
+        height: 34rem;
+    }
+
+    .product-img {
+        min-width: 16rem;
+    }
+
+    .prod-name {
+        font-size: 1.6rem;
+
+    }
+
+    .prod-desc {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    .more-products {
+        background: rgb(92, 197, 245);
+
+    }
+
+    .products {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .card-products {
+        max-width: 20rem;
+        height: 30rem;
+    }
+
+    .product-img {
+        min-width: 16rem;
+    }
+
+    .prod-name {
+        font-size: 1.5rem;
+
+    }
+
+    .prod-desc {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {}

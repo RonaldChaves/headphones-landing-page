@@ -1,0 +1,133 @@
+.footer {
+
+    height: 70vh;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(226deg, rgba(255, 255, 255, 1) 7%, rgba(129, 194, 223, 1) 47%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0 0;
+    gap: 10rem;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-right {
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 6rem 0;
+    gap: 2rem;
+}
+
+.foo-left-title {
+    font-size: 3rem;
+}
+
+.foo-r-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 1rem;
+}
+
+.foo-right-left,
+.foo-right-right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.foo-right-left p,
+.foo-right-right p {
+    font-size: 1.2rem;
+}
+
+.foo-right-right p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.foo-right-right p a {
+    font-size: 2rem;
+}
+
+.foo-r-title {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .footer {
+        gap: 8rem;
+    }
+
+    .footer-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-right {
+        padding: 0 8rem 0;
+    }
+
+    .foo-left-title {
+        padding-left: 25%;
+        text-align: justify;
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        gap: 4rem;
+        background: rgb(92, 197, 245);
+
+    }
+
+
+    .footer-right {
+        width: 100%;
+        padding: 0 2rem 0;
+    }
+
+    .foo-left-title {
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .footer {
+        height: 100%;
+        gap: 4rem;
+        background: rgb(92, 197, 245);
+
+    }
+
+    .foo-r-div {
+        display: flex;
+        flex-direction: column;
+        gap: 1.8rem;
+    }
+
+    .footer-right {
+        width: 100%;
+        padding: 0 2rem 0;
+    }
+
+    .foo-left-title {
+        padding-left: 10%;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {}

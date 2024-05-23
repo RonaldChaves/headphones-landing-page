@@ -1,0 +1,301 @@
+.header {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(233deg, rgba(255, 255, 255, 1) 7%, rgba(129, 194, 223, 1) 47%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo-nav {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 30px;
+}
+
+.nav-content {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-mobile,
+.list-links {
+    display: none;
+}
+
+.nav-link {
+    margin-left: 4rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.header-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    height: 70%;
+}
+
+.left-text {
+    font-size: 5.6rem;
+}
+
+
+.headphone-photo {
+    width: 30rem;
+    position: relative;
+    animation: movement 3s infinite;
+}
+
+.btn-buy,
+.btn-buy:not(:hover) {
+    border: none;
+    padding: 1.2rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    transition: 0.7s;
+}
+
+.btn-buy:hover {
+    transition: 0.7s;
+    background-color: #323232;
+    color: #fff;
+}
+
+.btn-buy:active,
+.btn-buy-all:active {
+    position: relative;
+    top: 2px;
+}
+
+.btn-buy-all {
+    border: none;
+    padding: 1.2rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    filter: opacity(0.8);
+}
+
+.btn-buy-all:hover {
+    transition: 0.7s;
+    filter: opacity(1);
+}
+
+@keyframes movement {
+    0% {
+        top: 2rem;
+    }
+
+    50% {
+        top: 0;
+    }
+
+    100% {
+        top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .nav-content {
+        display: none;
+    }
+
+    .logo-nav {
+        width: 100%;
+    }
+
+    .header-content {
+        width: 90%;
+    }
+
+    .header-left-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .left-text {
+        font-size: 3rem;
+    }
+
+    .headphone-photo {
+        width: 25rem;
+    }
+
+    .btn-buy,
+    .btn-buy:not(:hover) {
+        padding: 1rem;
+        font-size: 1rem;
+        margin-right: 0.8rem;
+    }
+
+    .btn-buy-all {
+        padding: 1rem;
+        font-size: 1rem;
+        margin-right: 0.8rem;
+    }
+
+    .nav-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-list-links {
+        border: none;
+        padding: 1rem;
+    }
+
+    .fa-bars {
+        font-size: 2rem;
+    }
+
+    .list-links {
+        position: absolute;
+        top: 5rem;
+        right: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-link {
+        z-index: 1;
+        background-color: #ffe3e3;
+        width: 100%;
+        height: 100%;
+        padding: 1.6rem;
+    }
+
+    .list-link a {
+        color: #000;
+        font-size: 1.4rem;
+    }
+
+    .list-link:hover {
+        background-color: #8b8b8b;
+        color: #fff;
+    }
+
+    .disabled {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        background: rgb(92, 197, 245);
+    }
+
+    .btn-list-links {
+        background: rgb(92, 197, 245);
+
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+    }
+
+    .left-text {
+        margin-top: 4rem;
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .headphone-photo {
+        width: 17rem;
+    }
+
+    .button-left-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .btn-buy,
+    .btn-buy:not(:hover) {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .btn-buy-all {
+        margin-bottom: 2rem;
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+    .header {
+        background: rgb(92, 197, 245);
+    }
+
+    .header-content {
+        width: 90%;
+        height: 90%;
+    }
+
+    .left-text {
+        font-size: 2.4rem;
+    }
+
+    .headphone-photo {
+        width: 23rem;
+    }
+
+    .button-left-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .btn-buy,
+    .btn-buy:not(:hover) {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .btn-buy-all {
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {}

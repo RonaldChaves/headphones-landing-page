@@ -1,0 +1,122 @@
+.support {
+    height: 90vh;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(308deg, rgba(255, 255, 255, 1) 7%, rgba(129, 194, 223, 1) 47%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sup-left-up,
+.sup-left-down {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+
+.sup-left-up p,
+.sup-left-down p {
+    font-size: 1.2rem;
+}
+
+.sup-title {
+    font-size: 3rem;
+}
+
+.sup-shop {
+    font-size: 1.8rem;
+}
+
+.support-right {
+    max-width: 90%;
+}
+
+.support-photo {
+    border-radius: 0 0 10rem 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .support {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4rem;
+    }
+
+    .support-left {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sup-left-up,
+    .sup-left-down {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin: 2rem;
+    }
+
+    .sup-left-up {
+        width: 50%;
+        align-items: flex-start;
+    }
+
+
+    .sup-left-up p,
+    .sup-left-down p {
+        font-size: 1rem;
+    }
+
+    .sup-title {
+        font-size: 3rem;
+    }
+
+    .sup-shop {
+        font-size: 1.8rem;
+    }
+
+    .support-right {
+        max-width: 40%;
+    }
+
+    .support-photo {
+        width: 90%;
+        border-radius: 0 0 10rem 0;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .support {
+        background: rgb(92, 197, 245);
+
+    }
+
+    .sup-left-up p,
+    .sup-left-down p {
+        font-size: 0.8rem;
+    }
+
+    .sup-title {
+        font-size: 2rem;
+    }
+
+    .support-photo {
+        width: 100%;
+        border-radius: 0 0 3rem 0;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 1024px) {}
